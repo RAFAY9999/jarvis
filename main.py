@@ -43,6 +43,7 @@ def aiprocess(command):
     """
     Returns your Gemini API key (replace with your actual key).
     """
+    return "your api key" # relace with your gemini api key
 
   try:
     genai.configure(api_key=get_api_key())
