@@ -7,6 +7,7 @@ def get_api_key():
   """
   return "YOUR_API_KEY"  # Replace with your actual API key (less secure)
 
+return "YOUR_API_KEY"  # Replace with your actual API key (less secure)
 try:
   # Attempt to configure with the hardcoded key in the function
   genai.configure(api_key=get_api_key())

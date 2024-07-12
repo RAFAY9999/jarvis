@@ -45,6 +45,7 @@ def aiprocess(command):
     """
     return "your gemini api key"  # Replace with your actual API key
 
+
   try:
     genai.configure(api_key=get_api_key())
   except Exception as e:
