@@ -43,6 +43,7 @@ def aiprocess(command):
     """
     Returns your Gemini API key (replace with your actual key).
     """
+    return "your gemini api key"  # Replace with your actual API key
 
   try:
     genai.configure(api_key=get_api_key())
@@ -68,6 +69,7 @@ def processCommand(c):
         link = musiclibrary.music[song]
         wb.open(link)
     elif "news" in c.lower():
+        r = requests.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=api_key")
         if r.status_code == 200:
             # Processing the response data (json format)
             data = r.json()
